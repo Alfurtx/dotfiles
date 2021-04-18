@@ -1,0 +1,5 @@
+picom-git
+polybar
+python-ueberzug-git
+ttf-icomoon-feather
+yay-git
