@@ -1,10 +1,11 @@
 #!/bin/bash
 
 function prereq(){
-    pacman -S sudo
+    pacman -S sudo git alacritty nvim
 }
 
 function install_dotfiles(){
+    git clone https://github.com/Alfurtx/dotfiles.git
 }
 
 function install_packages(){
