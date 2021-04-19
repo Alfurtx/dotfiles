@@ -1,5 +1,9 @@
 #!/bin/bash
 
+function instSudo(){
+    pacman -S sudo
+}
+
 # Check we have git installed
 function instGit(){
     if ! pacman -Qi git > /dev/null ; then
@@ -73,6 +77,9 @@ function moveItToAConfig(){
     mkdir .config
     mv ./dotfiles/* ./config/
     cd
+    mv ./.config/.xinitrc $HOME
+    mv ./.config/.zshrc $HOME
+    mv ./.config/.p10k.zsh $HOME
 }
 
 instGit
