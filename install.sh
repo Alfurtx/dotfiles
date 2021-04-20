@@ -1,5 +1,15 @@
 #!/bin/bash
 
+function instPkgsVirtBox(){
+    cd
+    read -p "[FONSI] estas instalando en una maquina virtual? [y/n]" yn
+    case $yn in
+        [yY])
+            sudo pacman -S virtualbox-guest-utils xf86-video-vmware
+            ;;
+    esac
+}
+
 function instalarDriversIntel(){
     cd
     read -p "[FONSI] Estas tratando de instalarlo en el portatil? [y/n]" yn
@@ -39,11 +49,11 @@ function instYay(){
 function install_packages(){
     echo "[FONSI] installing pacman packages..."
     # Installing the pacman packages
-    sudo pacman -Sy $(cat $HOME/.config/packages.txt)
+    yay -S $(cat $HOME/dotfiles/packages.txt)
 
     echo "[FONSI] installing pacman aur packages..."
     # Installing the AUR packages
-    yay -S $(cat $HOME/.config/aur_packages.txt)
+    yay -S $(cat $HOME/dotfiles/aur_packages.txt)
 }
 
 function installOhMyZsh(){
@@ -61,17 +71,18 @@ function moveItToAConfig(){
     cd
     mv ./dotfiles/* ./config/
     cd
-    mv .config/.xinitrc $HOME
-    mv .config/.zshrc $HOME
-    mv .config/.p10k.zsh $HOME
+    mv dotfiles/.zshr $HOME
+    mv dotfiles/.zshrc $HOME
+    mv dotfiles/.p10k.zsh $HOME
 }
 
 function main(){
     sudo pacman -Syu
+    createConfigDir
     instalarDriversIntel
+    instPkgsVirtBox
     installXorgShit
     instYay
-    createConfigDir
     install_packages
     moveItToAConfig
     installOhMyZsh

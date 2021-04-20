@@ -1,6 +1,5 @@
 alacritty
 alsa-utils
-asio
 autoconf
 automake
 base
@@ -10,7 +9,6 @@ bison
 bpytop
 clang
 cmake
-discord
 dmenu
 dosfstools
 efibootmgr
@@ -44,6 +42,7 @@ openssh
 os-prober
 pacman-contrib
 papirus-icon-theme
+parcellite
 patch
 pavucontrol
 picom-git
