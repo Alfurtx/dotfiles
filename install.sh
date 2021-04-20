@@ -1,7 +1,13 @@
 #!/bin/bash
 
-function instSudo(){
-    pacman -S sudo
+function instalarDriversIntel(){
+    cd
+    read -p "[FONSI] Estas tratando de instalarlo en el portatil? [y/n]" yn
+    case $yn in
+        [yY])
+            sudo pacman -S xf86-video-intel
+            ;;
+    esac
 }
 
 # Check we have git installed
@@ -45,6 +51,7 @@ function instYay(){
     git clone https://aur.archlinux.org/yay-git.git
     cd yay-git/
     makepkg -si
+    cd
 }
 
 function install_packages(){
@@ -57,35 +64,34 @@ function install_packages(){
     yay -S $(cat $HOME/.config/aur_packages.txt)
 }
 
-# Once every package is installed is time to install extra things
-# First, we're gonna configure firefox
-# Secondly, we're going to configure zsh and oh-my-zsh
-
 function installOhMyZsh(){
     # This install ohmyzsh
     sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+}
 
-    # install plugins
-    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-    git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm
+function createConfigDir(){
+    cd
+    mkdir .config
+    cd
 }
 
 function moveItToAConfig(){
     cd
-    mkdir .config
     mv ./dotfiles/* ./config/
     cd
-    mv ./.config/.xinitrc $HOME
-    mv ./.config/.zshrc $HOME
-    mv ./.config/.p10k.zsh $HOME
+    mv .config/.xinitrc $HOME
+    mv .config/.zshrc $HOME
+    mv .config/.p10k.zsh $HOME
 }
 
-instGit
-installXorgShit
-instYay
-installDotfiles
-install_packages
-installOhMyZsh
-moveItToAConfig
+function main(){
+    instalarDriversIntel
+    instGit
+    installXorgShit
+    installDotfiles
+    instYay
+    createConfigDir
+    install_packages
+    moveItToAConfig
+    installOhMyZsh
+}
