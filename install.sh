@@ -10,14 +10,6 @@ function instalarDriversIntel(){
     esac
 }
 
-# Check we have git installed
-function instGit(){
-    if ! pacman -Qi git > /dev/null ; then
-        echo "[FONSI] git is not installed on the system, proceding to install..."
-        sudo pacman -S git
-    fi
-}
-
 function installXorgShit(){
     sudo pacman -S xorg xorg-xinit
 }
@@ -29,16 +21,6 @@ function set_startx_automatically(){
     echo -e "setxkbdmap es" >> .bashrc
     cd
 }
-
-
-# Now we download the dotfiles repo and move it to a .config
-function installDotfiles(){
-    echo "[FONSI] installing dotfiles..."
-    cd
-    git clone https://github.com/Alfurtx/dotfiles.git
-    cd
-}
-
 
 function instYay(){
     echo "[FONSI] installing yay dependencies..."
@@ -85,10 +67,9 @@ function moveItToAConfig(){
 }
 
 function main(){
+    sudo pacman -Syu
     instalarDriversIntel
-    instGit
     installXorgShit
-    installDotfiles
     instYay
     createConfigDir
     install_packages
