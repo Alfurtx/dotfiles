@@ -25,6 +25,7 @@ jdk-openjdk
 jre-openjdk
 jre-openjdk-headless
 libstdc++5
+libtool
 linux
 linux-firmware
 m4
@@ -33,6 +34,7 @@ mtools
 nano
 neofetch
 neovim
+nerd-fonts-complete
 network-manager-applet
 networkmanager
 nitrogen
@@ -72,6 +74,7 @@ xclip
 xf86-video-fbdev
 xf86-video-vesa
 xf86-video-vmware
+xfce4-clipman-plugin
 xorg-bdftopcf
 xorg-docs
 xorg-font-util
@@ -110,7 +113,6 @@ xorg-xlsclients
 xorg-xmodmap
 xorg-xpr
 xorg-xprop
-xorg-xrandr
 xorg-xrdb
 xorg-xrefresh
 xorg-xset
