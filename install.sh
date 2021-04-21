@@ -1,13 +1,11 @@
 #!/bin/bash
 
-function instPkgsVirtBox(){
+function instWallpapers(){
     cd
-    read -p "[FONSI] estas instalando en una maquina virtual? [y/n]" yn
-    case $yn in
-        [yY])
-            sudo pacman -S virtualbox-guest-utils xf86-video-vmware
-            ;;
-    esac
+    mkdir Pictures
+    cd Pictures
+    git clone https://github.com/Alfurtx/wallpapers.git
+    cd
 }
 
 function instalarDriversIntel(){
@@ -15,7 +13,7 @@ function instalarDriversIntel(){
     read -p "[FONSI] Estas tratando de instalarlo en el portatil? [y/n]" yn
     case $yn in
         [yY])
-            sudo pacman -S xf86-video-intel
+            sudo pacman -S xf86-video-intel acpi cbatticon xf86-input-libinput xorg-xinput
             ;;
     esac
 }
@@ -51,6 +49,16 @@ function install_packages(){
     # Installing the pacman packages
     yay -S $(cat $HOME/dotfiles/packages.txt)
 
+    cd
+    read -p "[FONSI] estas instalando en una maquina virtual? [y/n]" yn
+    case $yn in
+        [yY])
+            sudo pacman -S virtualbox-guest-utils xf86-video-vmware xf86-video-fbdev
+            ;;
+        [nN])
+            sudo pacman -Rs virtualbox-guest-utils xf86-video-vmware xf86-video-fbdev
+    esac
+
     echo "[FONSI] installing pacman aur packages..."
     # Installing the AUR packages
     yay -S $(cat $HOME/dotfiles/aur_packages.txt)
@@ -69,9 +77,9 @@ function createConfigDir(){
 
 function moveItToAConfig(){
     cd
-    mv ./dotfiles/* ./config/
+    mv dotfiles/* .config/
     cd
-    mv dotfiles/.zshr $HOME
+    mv dotfiles/.xinitrc $HOME
     mv dotfiles/.zshrc $HOME
     mv dotfiles/.p10k.zsh $HOME
 }
@@ -80,10 +88,12 @@ function main(){
     sudo pacman -Syu
     createConfigDir
     instalarDriversIntel
-    instPkgsVirtBox
     installXorgShit
     instYay
     install_packages
     moveItToAConfig
+    instWallpapers
     installOhMyZsh
 }
+
+main
