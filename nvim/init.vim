@@ -41,6 +41,10 @@ set showtabline=2
 " ### COLORIZER ###
 
 
+" ### COC EXTENSIONS ###
+
+let g:coc_global_extensions = ['coc-prettier', 'coc-pairs', 'coc-html-css-support', 'coc-html', 'coc-highlight', 'coc-git', 'coc-eslint', 'coc-emmet', 'coc-yaml', 'coc-tsserver', 'coc-sh', 'coc-pyright', 'coc-lua', 'coc-json', 'coc-java', 'coc-css', 'coc-clangd']
+
 
 " ### KEYBINDINGS ###
 
