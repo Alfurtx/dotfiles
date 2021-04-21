@@ -1,5 +1,6 @@
 picom-git
 polybar
+nerd-fonts-complete
 python-ueberzug-git
 ttf-icomoon-feather
 yay-git
