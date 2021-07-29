@@ -9,3 +9,4 @@ como la idea principal de este proyecto es dejarlo todo en el dotfiles y hacer t
 - [ ] configurar el .config para que todos los archivos/directorios que haya en un .config sean links a los archivos en el dotfiles
 - [ ] cambiar install script para poder instalar todo mejor
 - [ ] añadir script para crear links y archivos de configuracion facilmente si deseo cambiar, borrar o añadir algun programa que lo requiera
+- [ ] añadir 'export ZDOTDIR=~/.config/zsh' a /etc/zsh/zshenv (si este archivo no exite, crealo y pon eso)
