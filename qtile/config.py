@@ -8,63 +8,20 @@ from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
 from datetime import datetime as dt
 
-### gruvbox colors ###
+### COLORSCHEME ###
 
-COLS = {
-    "dark_0": "#1d2021",
-    "dark_1": "#282828",
-    "dark_2": "#32302f",
-    "dark_3": "#3c3836",
-    "dark_4": "#504945",
-    "dark_5": "#665c54",
-    "dark_6": "#7c6f64",
-    "gray_0": "#928374",
-    "light_0": "#f9f5d7",
-    "light_1": "#fbf1c7",
-    "light_2": "#f2e5bc",
-    "light_3": "#ebdbb2",
-    "light_4": "#d5c4a1",
-    "light_5": "#bdae93",
-    "light_6": "#a89984",
-    "red_0": "#fb4934",
-    "red_1": "#cc241d",
-    "red_2": "#9d0006",
-    "green_0": "#b8bb26",
-    "green_1": "#98971a",
-    "green_2": "#79740e",
-    "yellow_0": "#fabd2f",
-    "yellow_1": "#d79921",
-    "yellow_2": "#b57614",
-    "blue_0": "#83a598",
-    "blue_1": "#458588",
-    "blue_2": "#076678",
-    "purple_0": "#d3869b",
-    "purple_1": "#b16286",
-    "purple_2": "#8f3f71",
-    "aqua_0": "#8ec07c",
-    "aqua_1": "#689d6a",
-    "aqua_2": "#427b58",
-    "orange_0": "#fe8019",
-    "orange_1": "#d65d0e",
-    "orange_2": "#af3a03",
-    # Additional related colors from the deus colorscheme
-    'deus_1': '#2C323B',
-    'deus_2': '#646D7A',
-    'deus_3': '#48505D',
-    'deus_4': '#1A222F',
-    'deus_5': '#101A28',
+colors = {
+    'bg':      '#282c34',
+    'fg':      '#bbc2cf',
+    'black':   '#282c34',
+    'red':     '#ff6c6b',
+    'green':   '#98be65',
+    'yellow':  '#ecbe7b',
+    'blue':    '#51afef',
+    'magenta': '#c678dd',
+    'cyan':    '#46d9ff',
+    'white':   '#bbc2cf',
 }
-
-### FUNCTIONS ###
-
-def suffix(d):
-    return 'th' if 11<=13 else {1:'st', 2:'nd', 3:'rd'}.get(d%10, 'th')
-
-def custom_strftime(format, t):
-    return t.strftime(format).replace('{S}', str(t.day) + suffix(t.day))
-
-def custom_date():
-    return custom_strftime('%A, {S} %B', dt.now())
 
 ### KEYS ###
 
@@ -137,87 +94,112 @@ for i, group in enumerate(groups):
         ])
 
 ### LAYOUTS ###
-layout_theme = {
-        "border_width": 4,
-        "margin": 10,
-        "border_focus": COLS["dark_0"],
-        "border_normal": COLS["dark_0"]
-        }
+layout_theme = { "margin": 5, }
 
-layouts = [
-
-    #layout.Max(), #layout.Stack(num_stacks=2),
-    # Try more layouts by unleashing below layouts.
-    # layout.Bsp(),
-    # layout.Columns(),
-    # layout.Matrix
-
-    layout.MonadTall(
-        **layout_theme
-    ),
-
-    # layout.MonadWide(),
-    # layout.RatioTile(),
-    # layout.Tile(),
-    # layout.TreeTab(),
-    # layout.VerticalTile(),
-    # layout.Zoomy(),
-]
+layouts = [ layout.MonadTall( **layout_theme ) ]
 
 ### WIDGET ###
 
-widget_defaults = dict(
-    font='Hack Nerd Font',
-    fontsize=15,
-    foreground=COLS["light_3"],
+font_settings = dict(
+    font = 'Hack Nerd Font',
+    fontsize = 15,
 )
+
+widget_defaults = dict(
+    **font_settings,
+    foreground = colors['fg'],
+    padding = 1
+)
+
 extension_defaults = widget_defaults.copy()
 
-def init_screens_original():
-    [
-        Screen(
-            top=bar.Bar(
-                [
-                    widget.GroupBox(
-                        other_current_screen_border=COLS["orange_0"],
-                        this_current_screen_border=COLS["blue_0"],
-                        other_screen_border=COLS["orange_0"],
-                        this_screen_border=COLS["blue_0"],
-                        highlight_color=COLS["blue_0"],
-                        urgent_border=COLS["red_1"],
-                        background=COLS["dark_4"],
-                        highlight_method="line",
-                        inactive=COLS["dark_2"],
-                        active=COLS["light_2"],
-                        disable_drag=True,
-                        borderwidth=2,
-                        **widget_defaults),
-                    widget.Spacer(length = 10),
-                    widget.WindowName(
-                        **widget_defaults,
-                        emoji = True
-                        ),
-                    widget.Prompt(
-                        **widget_defaults
-                    ),
-                    widget.Volume(
-                        **widget_defaults
-                    ),
-                    widget.Systray(),
-                    widget.Spacer(length = 10),
-                    widget.Clock(
-                        **widget_defaults,
-                        format='%d/%m/%Y - %H:%M'
-                    )
-                ],
-                25, background=COLS["dark_2"], opacity=0.9, margin = [10, 10, 0, 10]
-            ),
-        ),
-    ]
-
+# powerline separator for rounded finishes on widgets
+def powerline(fg = 'fg', bg = 'bg'):
+    return widget.TextBox(
+        text = '',
+        background = colors[bg],
+        foreground = colors[fg],
+        padding = -2,
+        fontsize = 37
+    )
 
 screens = [
-    Screen(top = bar.Gap(size = 32))
+    Screen(
+        top = bar.Bar(
+            [
+                widget.Spacer( length = 5 ),
+                widget.AGroupBox(
+                    **widget_defaults,
+                    background = colors['bg'],
+                    borderwidth = 0,
+                ),
+                widget.Spacer( length = 20 ),
+                widget.Mpd2(
+                    **widget_defaults,
+                    color_progress = colors['blue'],
+                    idle_format = '{idle_message}',
+                    idle_message = ' no playlist selected',
+                    max_chars = 100,
+                    no_connection = 'no connection to server',
+                    play_states = { 'pause': '', 'play': '', 'stop': '' },
+                    status_format = '{play_status} {artist} ~ {title} [{repeat}{random}{single}{consume}{updating_db}]',
+                    background = 'yellow'
+                ),
+                widget.Spacer(),
+                widget.WindowName(
+                    **widget_defaults,
+                    max_chars = 50,
+                    format = '{name}',
+                ),
+                widget.Spacer(),
+                powerline('cyan', 'yellow'),
+                widget.CheckUpdates(
+                    **font_settings,
+                    max_chars = 15,
+                    colour_have_updates = colors['red'],
+                    colour_no_updates = colors['green'],
+                    display_format = ' {updates} updates',
+                    no_update_string = 'all up to date!',
+                    custom_command = 'checkupdates',
+                    background = colors['cyan']
+                ),
+                widget.Spacer( length = 15 ),
+                powerline('blue', 'cyan'),
+                widget.Volume(
+                    **widget_defaults,
+                    background = colors['blue']
+                ),
+                widget.Spacer( length = 15 ),
+                # widget.Bluetooth(
+                #     **widget_defaults,
+                #     max_chars = 20
+                # ),
+                powerline('magenta', 'blue'),
+                widget.Net(
+                    **font_settings,
+                    format = '直 {interface}',
+                    background = colors['magenta'],
+                    interface = 'enp0s3'
+                ),
+                widget.Spacer( length = 15 ),
+                # widget.Backlight(
+                #     **font_settings,
+                # ),
+                # widget.Spacer( length = 15 ),
+                #     widget.Battery(
+                #     **widget_defaults
+                # ),
+                powerline('red', 'magenta'),
+                widget.QuickExit(
+                    **widget_defaults,
+                    default_text = '襤',
+                    countdown_format = '襤 {}',
+                    background = colors['red']
+                )
+            ],
+            25, background = colors['bg']
+        )
+    )
 ]
 
 # Drag floating layouts.
