@@ -1,0 +1,2 @@
+# save all music/videos on ~/music folder
+-o ~/music/%(title)s.%(ext)s
