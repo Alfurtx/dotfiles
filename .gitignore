@@ -1,2 +1,3 @@
-doom-nvim/*
-ncmpcpp/ncmpcpp-ueberzug/*
+./doom-nvim/*
+./doom-nvim
+./ncmpcpp/ncmpcpp-ueberzug/*
