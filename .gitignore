@@ -1,4 +1,4 @@
 ./doom-nvim/*
 ./doom-nvim
 ./ncmpcpp/ncmpcpp-ueberzug/*
-./cargo
+./cargo/*
