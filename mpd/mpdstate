@@ -1,0 +1,36 @@
+sw_volume: 100
+audio_device_state:1:Alsa for audio sound card
+audio_device_state:1:my_fifo
+state: pause
+current: 7
+time: 158.830000
+random: 1
+repeat: 1
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:can i talk to u.mp3
+1:Changes (frad remix) [XXXTENTACION Tribute].mp3
+2:D O M I N G O - Plz p_ frad.mp3
+3:esthie - crush w_ frad.mp3
+4:frad - blossoms (w_bloom.).mp3
+5:Frad - Endless Summer (Original).mp3
+6:frad - first date.mp3
+7:frad - Home..mp3
+8:frad - how are you.mp3
+9:frad - I'm Sorry.mp3
+10:frad - the girl i have a crush on.mp3
+11:frad - 喫茶店.mp3
+12:frad X Shumori - With You..mp3
+13:Ｌｉｇｈｔｓ　Ｐｌｅａｓｅ.mp3
+14:our memories together.....mp3
+15:SeaHaven.mp3
+16:standing next to my grave.mp3
+17:Sweet Dreams.mp3
+18:The Museum feat. Kuzu Mellow & FoolHive (Prod. by Frad).mp3
+19:unrequited love.mp3
+20:while you were away.mp3
+playlist_end

@@ -1,0 +1,15 @@
+[submodule "doom-nvim"]
+	path = doom-nvim
+	url = https://github.com/NTBBloodbath/doom-nvim.git
+[submodule "ncmpcpp/ncmpcpp-ueberzug"]
+	path = ncmpcpp/ncmpcpp-ueberzug
+	url = https://github.com/tam-carre/ncmpcpp-ueberzug.git
+[submodule "nvm"]
+	path = nvm
+	url = https://github.com/nvm-sh/nvm.git
+[submodule "oh-my-zsh"]
+	path = oh-my-zsh
+	url = https://github.com/ohmyzsh/ohmyzsh.git
+[submodule "ranger/plugins/ranger_devicons"]
+	path = ranger/plugins/ranger_devicons
+	url = https://github.com/alexanderjeurissen/ranger_devicons.git
