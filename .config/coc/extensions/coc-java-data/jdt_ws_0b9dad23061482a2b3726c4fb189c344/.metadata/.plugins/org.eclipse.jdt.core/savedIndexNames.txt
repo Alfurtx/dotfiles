@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+/home/fonsi/.config/coc/extensions/coc-java-data/jdt_ws_0b9dad23061482a2b3726c4fb189c344/.metadata/.plugins/org.eclipse.jdt.core
+3842426239.index
