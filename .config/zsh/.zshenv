@@ -16,7 +16,7 @@ export EMACSDIR=$XDG_CONFIG_HOME/emacs
 export DOOMLOCALDIR=$EMACSDIR/.local
 export CARGO_HOME=$XDG_CONFIG_HOME/cargo
 export ZDOTDIR=$XDG_CONFIG_HOME/zsh
-export HISTFILE=$ZDOTDIR/.zsh_history
+export HISTFILE=$XDG_CACHE_HOME/zsh/.zsh_history
 
 export XAUTHORITY=$XDG_CONFIG_HOME/xorg/Xauthority
 export XINITRC=$XDG_CONFIG_HOME/xorg/.xinitrc
