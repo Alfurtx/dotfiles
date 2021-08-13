@@ -57,6 +57,8 @@ eval "$(zoxide init zsh)"
 # youtube-dl to download stuffs
 alias yt='youtube-dl --extract-audio --add-metadata --xattrs --embed-thumbnail --audio-quality 0 --audio-format mp3'
 alias ytv='youtube-dl --merge-output-format mp4 -f "bestvideo+bestaudio[ext=m4a]/best" --embed-thumbnail --add-metadata'
+
+# music stuff (mpd and ncmpcpp) 
 alias kek=" killall mpd ncmpcpp ncmpcpp_cover_art.sh"
 alias mpdd=" mpd && ~/.config/ncmpcpp/ncmpcpp-ueberzug/ncmpcpp-ueberzug"
 
