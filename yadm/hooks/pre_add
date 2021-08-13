@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# add .gitignore patterns to yadm ignore list
+cp ~/.config/.gitignore ~/.local/share/yadm/repo.git/info/exclude

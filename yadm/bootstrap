@@ -1,0 +1,8 @@
+#!/bin/sh
+
+cd $HOME/.config
+echo "[yadm] init submodules"
+yadm submodule update --recursive --init
+
+echo "[yadm] udpating the yadm repo origin url"
+yadm remote set-url origin "git@github.com:Alfurtx/dotfiles.git"
