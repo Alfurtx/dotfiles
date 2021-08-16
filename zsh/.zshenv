@@ -25,6 +25,7 @@ export XINITRC=$XDG_CONFIG_HOME/xorg/.xinitrc
 export ZSH=$XDG_CONFIG_HOME/oh-my-zsh
 export ZSH_CACHE_DIR=$XDG_CACHE_HOME/oh-my-zsh
 export ZSH_COMPDUMP=$XDG_CACHE_HOME/zsh/zcompdump
+export ZSH_CUSTOM=$ZSH/custom
 
 # for putting things in .share by default
 export GNUPGHOME="${XDG_DATA_HOME:-$HOME/.local/share}/gnupg"
