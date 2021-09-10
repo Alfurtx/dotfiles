@@ -1,0 +1,5 @@
+2021/09/04-23:06:22.205 83945 Reusing MANIFEST /home/fonsi/.config/YouTube Music/IndexedDB/https_music.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/09/04-23:06:41.530 83947 Level-0 table #5: started
+2021/09/04-23:06:41.534 83947 Level-0 table #5: 32242 bytes OK
+2021/09/04-23:06:41.538 83947 Delete type=0 #3
+2021/09/04-23:06:41.538 83947 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

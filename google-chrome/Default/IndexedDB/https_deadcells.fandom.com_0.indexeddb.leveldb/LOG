@@ -1,0 +1,6 @@
+2021/09/03-17:31:58.857 78458 Creating DB /home/fonsi/.config/google-chrome/Default/IndexedDB/https_deadcells.fandom.com_0.indexeddb.leveldb since it was missing.
+2021/09/03-17:31:58.865 78458 Reusing MANIFEST /home/fonsi/.config/google-chrome/Default/IndexedDB/https_deadcells.fandom.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/09/03-17:36:18.138 7b153 Level-0 table #5: started
+2021/09/03-17:36:18.141 7b153 Level-0 table #5: 23417 bytes OK
+2021/09/03-17:36:18.144 7b153 Delete type=0 #3
+2021/09/03-17:36:18.144 7b153 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

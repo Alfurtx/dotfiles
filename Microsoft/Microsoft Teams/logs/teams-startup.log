@@ -1,0 +1,70 @@
+Error while parsing hooks JSON. Error: "ENOENT: no such file or directory, open '/home/fonsi/.config/Microsoft/Microsoft Teams/hooks.json'"
+(node:253658) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(node:253658) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 ecsSettingsUpdated listeners added to [EventEmitter]. Use emitter.setMaxListeners() to increase limit
+(node:253658) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 appInitialized listeners added to [EventEmitter]. Use emitter.setMaxListeners() to increase limit
+(node:254777) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 remote-videos-count-changed listeners added to [CallHandler]. Use emitter.setMaxListeners() to increase limit
+(node:254777) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 remote-videos-count-changed listeners added to [CallHandler]. Use emitter.setMaxListeners() to increase limit
+(node:254777) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 remote-videos-count-changed listeners added to [CallHandler]. Use emitter.setMaxListeners() to increase limit
+(node:253658) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 will-download listeners added to [Session]. Use emitter.setMaxListeners() to increase limit
+Error: Must run ranger from terminal
+Warning: Unable to set locale.  Expect encoding problems.
+Invalid linemode: devicons; should be filename/metatitle/permissions/fileinfo/mtime/sizemtime/humanreadablemtime/sizehumanreadablemtime
+/usr/bin/xdg-open: line 881: x-www-browser: command not found
+/usr/bin/xdg-open: line 881: firefox: command not found
+/usr/bin/xdg-open: line 881: iceweasel: command not found
+/usr/bin/xdg-open: line 881: seamonkey: command not found
+/usr/bin/xdg-open: line 881: mozilla: command not found
+/usr/bin/xdg-open: line 881: epiphany: command not found
+/usr/bin/xdg-open: line 881: konqueror: command not found
+/usr/bin/xdg-open: line 881: chromium: command not found
+/usr/bin/xdg-open: line 881: chromium-browser: command not found
+/usr/bin/xdg-open: line 881: google-chrome: command not found
+/usr/bin/xdg-open: line 881: www-browser: command not found
+/usr/bin/xdg-open: line 881: links2: command not found
+/usr/bin/xdg-open: line 881: elinks: command not found
+/usr/bin/xdg-open: line 881: links: command not found
+/usr/bin/xdg-open: line 881: lynx: command not found
+/usr/bin/xdg-open: line 881: w3m: command not found
+xdg-open: no method available for opening '/home/fonsi'
+Error: Must run ranger from terminal
+Warning: Unable to set locale.  Expect encoding problems.
+Invalid linemode: devicons; should be filename/metatitle/permissions/fileinfo/mtime/sizemtime/humanreadablemtime/sizehumanreadablemtime
+/usr/bin/xdg-open: line 881: x-www-browser: command not found
+/usr/bin/xdg-open: line 881: firefox: command not found
+/usr/bin/xdg-open: line 881: iceweasel: command not found
+/usr/bin/xdg-open: line 881: seamonkey: command not found
+/usr/bin/xdg-open: line 881: mozilla: command not found
+/usr/bin/xdg-open: line 881: epiphany: command not found
+/usr/bin/xdg-open: line 881: konqueror: command not found
+/usr/bin/xdg-open: line 881: chromium: command not found
+/usr/bin/xdg-open: line 881: chromium-browser: command not found
+/usr/bin/xdg-open: line 881: google-chrome: command not found
+/usr/bin/xdg-open: line 881: www-browser: command not found
+/usr/bin/xdg-open: line 881: links2: command not found
+/usr/bin/xdg-open: line 881: elinks: command not found
+/usr/bin/xdg-open: line 881: links: command not found
+/usr/bin/xdg-open: line 881: lynx: command not found
+/usr/bin/xdg-open: line 881: w3m: command not found
+xdg-open: no method available for opening '/home/fonsi'
+Error: Must run ranger from terminal
+Warning: Unable to set locale.  Expect encoding problems.
+Invalid linemode: devicons; should be filename/metatitle/permissions/fileinfo/mtime/sizemtime/humanreadablemtime/sizehumanreadablemtime
+/usr/bin/xdg-open: line 881: x-www-browser: command not found
+/usr/bin/xdg-open: line 881: firefox: command not found
+/usr/bin/xdg-open: line 881: iceweasel: command not found
+/usr/bin/xdg-open: line 881: seamonkey: command not found
+/usr/bin/xdg-open: line 881: mozilla: command not found
+/usr/bin/xdg-open: line 881: epiphany: command not found
+/usr/bin/xdg-open: line 881: konqueror: command not found
+/usr/bin/xdg-open: line 881: chromium: command not found
+/usr/bin/xdg-open: line 881: chromium-browser: command not found
+/usr/bin/xdg-open: line 881: google-chrome: command not found
+/usr/bin/xdg-open: line 881: www-browser: command not found
+/usr/bin/xdg-open: line 881: links2: command not found
+/usr/bin/xdg-open: line 881: elinks: command not found
+/usr/bin/xdg-open: line 881: links: command not found
+/usr/bin/xdg-open: line 881: lynx: command not found
+/usr/bin/xdg-open: line 881: w3m: command not found
+xdg-open: no method available for opening '/home/fonsi'
+(node:254777) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 remote-videos-count-changed listeners added to [CallHandler]. Use emitter.setMaxListeners() to increase limit
+(node:254777) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 remote-videos-count-changed listeners added to [CallHandler]. Use emitter.setMaxListeners() to increase limit

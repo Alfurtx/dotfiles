@@ -1,0 +1,9 @@
+2021/09/10-10:31:48.928 61526 Reusing MANIFEST /home/fonsi/.config/google-chrome/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/09/10-10:31:48.929 61526 Recovering log #199
+2021/09/10-10:31:48.929 61526 Reusing old log /home/fonsi/.config/google-chrome/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000199.log 
+2021/09/10-10:31:49.541 6048d Compacting 1@1 + 1@2 files
+2021/09/10-10:31:49.549 6048d Generated table #202@1: 343 keys, 20912 bytes
+2021/09/10-10:31:49.549 6048d Compacted 1@1 + 1@2 files => 20912 bytes
+2021/09/10-10:31:49.552 6048d compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/09/10-10:31:49.552 6048d Delete type=2 #200
+2021/09/10-10:31:49.552 6048d Delete type=2 #197

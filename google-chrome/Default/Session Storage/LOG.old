@@ -1,0 +1,45 @@
+2021/09/09-08:18:03.448 3 Reusing MANIFEST /home/fonsi/.config/google-chrome/Default/Session Storage/MANIFEST-000001
+2021/09/09-08:18:03.449 3 Recovering log #121
+2021/09/09-08:18:03.449 3 Reusing old log /home/fonsi/.config/google-chrome/Default/Session Storage/000121.log 
+2021/09/09-08:54:25.186 3 Level-0 table #125: started
+2021/09/09-08:54:25.190 3 Level-0 table #125: 22473 bytes OK
+2021/09/09-08:54:25.196 3 Delete type=0 #121
+2021/09/09-08:54:25.196 3 Compacting 4@0 + 1@1 files
+2021/09/09-08:54:25.205 3 Generated table #126@0: 7692 keys, 163986 bytes
+2021/09/09-08:54:25.205 3 Compacted 4@0 + 1@1 files => 163986 bytes
+2021/09/09-08:54:25.207 3 compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/09/09-08:54:25.208 3 Delete type=2 #119
+2021/09/09-08:54:25.208 3 Delete type=2 #125
+2021/09/09-08:54:25.208 3 Delete type=2 #114
+2021/09/09-08:54:25.208 3 Delete type=2 #122
+2021/09/09-08:54:25.208 3 Delete type=2 #117
+2021/09/09-10:38:50.197 55 Level-0 table #128: started
+2021/09/09-10:38:50.201 55 Level-0 table #128: 19099 bytes OK
+2021/09/09-10:38:50.204 55 Delete type=0 #124
+2021/09/09-15:34:06.762 fd Level-0 table #130: started
+2021/09/09-15:34:06.765 fd Level-0 table #130: 20118 bytes OK
+2021/09/09-15:34:06.769 fd Delete type=0 #127
+2021/09/09-16:53:31.905 116 Level-0 table #132: started
+2021/09/09-16:53:31.909 116 Level-0 table #132: 25679 bytes OK
+2021/09/09-16:53:31.912 116 Delete type=0 #129
+2021/09/09-17:41:30.013 131 Level-0 table #134: started
+2021/09/09-17:41:30.016 131 Level-0 table #134: 24243 bytes OK
+2021/09/09-17:41:30.020 131 Delete type=0 #131
+2021/09/09-17:41:30.021 131 Compacting 4@0 + 1@1 files
+2021/09/09-17:41:30.033 131 Generated table #135@0: 8363 keys, 190490 bytes
+2021/09/09-17:41:30.033 131 Compacted 4@0 + 1@1 files => 190490 bytes
+2021/09/09-17:41:30.036 131 compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/09/09-17:41:30.036 131 Delete type=2 #126
+2021/09/09-17:41:30.036 131 Delete type=2 #132
+2021/09/09-17:41:30.036 131 Delete type=2 #134
+2021/09/09-17:41:30.036 131 Delete type=2 #130
+2021/09/09-17:41:30.036 131 Delete type=2 #128
+2021/09/09-18:53:23.399 131 Level-0 table #137: started
+2021/09/09-18:53:23.405 131 Level-0 table #137: 24567 bytes OK
+2021/09/09-18:53:23.409 131 Delete type=0 #133
+2021/09/09-20:23:18.437 131 Level-0 table #139: started
+2021/09/09-20:23:18.440 131 Level-0 table #139: 25711 bytes OK
+2021/09/09-20:23:18.444 131 Delete type=0 #136
+2021/09/09-22:39:50.455 174 Level-0 table #141: started
+2021/09/09-22:39:50.459 174 Level-0 table #141: 25310 bytes OK
+2021/09/09-22:39:50.463 174 Delete type=0 #138

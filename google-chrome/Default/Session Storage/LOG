@@ -1,0 +1,36 @@
+2021/09/10-07:41:55.146 3 Reusing MANIFEST /home/fonsi/.config/google-chrome/Default/Session Storage/MANIFEST-000001
+2021/09/10-07:41:55.147 3 Recovering log #140
+2021/09/10-07:41:55.149 3 Reusing old log /home/fonsi/.config/google-chrome/Default/Session Storage/000140.log 
+2021/09/10-09:32:26.761 36 Level-0 table #144: started
+2021/09/10-09:32:26.765 36 Level-0 table #144: 19717 bytes OK
+2021/09/10-09:32:26.768 36 Delete type=0 #140
+2021/09/10-09:32:26.768 36 Compacting 4@0 + 1@1 files
+2021/09/10-09:32:26.782 36 Generated table #145@0: 8988 keys, 185673 bytes
+2021/09/10-09:32:26.782 36 Compacted 4@0 + 1@1 files => 185673 bytes
+2021/09/10-09:32:26.787 36 compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/09/10-09:32:26.787 36 Delete type=2 #144
+2021/09/10-09:32:26.787 36 Delete type=2 #139
+2021/09/10-09:32:26.787 36 Delete type=2 #141
+2021/09/10-09:32:26.787 36 Delete type=2 #137
+2021/09/10-09:32:26.787 36 Delete type=2 #135
+2021/09/10-11:09:21.684 59 Level-0 table #147: started
+2021/09/10-11:09:21.688 59 Level-0 table #147: 21938 bytes OK
+2021/09/10-11:09:21.692 59 Delete type=0 #143
+2021/09/10-12:27:11.839 73 Level-0 table #149: started
+2021/09/10-12:27:11.843 73 Level-0 table #149: 17754 bytes OK
+2021/09/10-12:27:11.846 73 Delete type=0 #146
+2021/09/10-14:10:43.566 a6 Level-0 table #151: started
+2021/09/10-14:10:43.571 a6 Level-0 table #151: 17416 bytes OK
+2021/09/10-14:10:43.574 a6 Delete type=0 #148
+2021/09/10-14:33:34.295 c5 Level-0 table #153: started
+2021/09/10-14:33:34.299 c5 Level-0 table #153: 46772 bytes OK
+2021/09/10-14:33:34.302 c5 Delete type=0 #150
+2021/09/10-14:33:34.302 c5 Compacting 4@0 + 1@1 files
+2021/09/10-14:33:34.312 c5 Generated table #154@0: 9515 keys, 240475 bytes
+2021/09/10-14:33:34.312 c5 Compacted 4@0 + 1@1 files => 240475 bytes
+2021/09/10-14:33:34.314 c5 compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/09/10-14:33:34.314 c5 Delete type=2 #147
+2021/09/10-14:33:34.314 c5 Delete type=2 #153
+2021/09/10-14:33:34.314 c5 Delete type=2 #149
+2021/09/10-14:33:34.314 c5 Delete type=2 #151
+2021/09/10-14:33:34.314 c5 Delete type=2 #145

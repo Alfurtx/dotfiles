@@ -1,0 +1,7 @@
+2021/09/01-13:52:27.987 1fafc Reusing MANIFEST /home/fonsi/.config/google-chrome/Default/IndexedDB/https_calendar.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/09/01-13:52:27.987 1fafc Recovering log #3
+2021/09/01-13:52:27.987 1fafc Reusing old log /home/fonsi/.config/google-chrome/Default/IndexedDB/https_calendar.google.com_0.indexeddb.leveldb/000003.log 
+2021/09/01-13:52:45.750 1fafc Level-0 table #5: started
+2021/09/01-13:52:45.752 1fafc Level-0 table #5: 1314 bytes OK
+2021/09/01-13:52:45.755 1fafc Delete type=0 #3
+2021/09/01-13:52:45.755 1fafc Manual compaction at level-0 from (begin) .. (end); will stop at (end)

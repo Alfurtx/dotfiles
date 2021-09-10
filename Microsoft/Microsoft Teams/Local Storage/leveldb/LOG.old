@@ -1,0 +1,23 @@
+2021/09/09-08:16:32.813 595 Reusing MANIFEST /home/fonsi/.config/Microsoft/Microsoft Teams/Local Storage/leveldb/MANIFEST-000001
+2021/09/09-08:16:32.814 595 Recovering log #35
+2021/09/09-08:16:32.832 595 Level-0 table #38: started
+2021/09/09-08:16:32.843 595 Level-0 table #38: 466568 bytes OK
+2021/09/09-08:16:32.861 595 Delete type=0 #35
+2021/09/09-08:17:33.571 e5c Level-0 table #41: started
+2021/09/09-08:17:33.577 e5c Level-0 table #41: 293233 bytes OK
+2021/09/09-08:17:33.580 e5c Delete type=0 #39
+2021/09/09-08:28:14.227 e5c Level-0 table #43: started
+2021/09/09-08:28:14.232 e5c Level-0 table #43: 207346 bytes OK
+2021/09/09-08:28:14.235 e5c Delete type=0 #40
+2021/09/09-08:28:14.235 e5c Compacting 4@0 + 1@1 files
+2021/09/09-08:28:14.245 e5c Generated table #44@0: 114 keys, 466695 bytes
+2021/09/09-08:28:14.245 e5c Compacted 4@0 + 1@1 files => 466695 bytes
+2021/09/09-08:28:14.248 e5c compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/09/09-08:28:14.248 e5c Delete type=2 #38
+2021/09/09-08:28:14.248 e5c Delete type=2 #43
+2021/09/09-08:28:14.249 e5c Delete type=2 #34
+2021/09/09-08:28:14.249 e5c Delete type=2 #36
+2021/09/09-08:28:14.249 e5c Delete type=2 #41
+2021/09/09-09:32:24.358 e5c Level-0 table #46: started
+2021/09/09-09:32:24.362 e5c Level-0 table #46: 51078 bytes OK
+2021/09/09-09:32:24.364 e5c Delete type=0 #42

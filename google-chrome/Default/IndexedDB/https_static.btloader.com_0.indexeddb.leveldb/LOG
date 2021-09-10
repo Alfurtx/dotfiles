@@ -1,0 +1,6 @@
+2021/09/08-12:03:09.279 17023 Creating DB /home/fonsi/.config/google-chrome/Default/IndexedDB/https_static.btloader.com_0.indexeddb.leveldb since it was missing.
+2021/09/08-12:03:09.288 17023 Reusing MANIFEST /home/fonsi/.config/google-chrome/Default/IndexedDB/https_static.btloader.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/09/08-12:03:19.299 1519d Level-0 table #5: started
+2021/09/08-12:03:19.302 1519d Level-0 table #5: 389 bytes OK
+2021/09/08-12:03:19.304 1519d Delete type=0 #3
+2021/09/08-12:03:19.304 1519d Manual compaction at level-0 from (begin) .. (end); will stop at (end)

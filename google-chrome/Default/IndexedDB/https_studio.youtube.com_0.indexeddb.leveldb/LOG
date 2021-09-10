@@ -1,0 +1,6 @@
+2021/09/06-20:13:27.117 204fa Creating DB /home/fonsi/.config/google-chrome/Default/IndexedDB/https_studio.youtube.com_0.indexeddb.leveldb since it was missing.
+2021/09/06-20:13:27.125 204fa Reusing MANIFEST /home/fonsi/.config/google-chrome/Default/IndexedDB/https_studio.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/09/06-20:13:29.508 204fa Level-0 table #5: started
+2021/09/06-20:13:29.510 204fa Level-0 table #5: 2544 bytes OK
+2021/09/06-20:13:29.513 204fa Delete type=0 #3
+2021/09/06-20:13:29.513 204fa Manual compaction at level-0 from (begin) .. (end); will stop at (end)

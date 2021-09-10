@@ -1,0 +1,21 @@
+2021/09/10-09:30:38.193 3df8c Reusing MANIFEST /home/fonsi/.config/Microsoft/Microsoft Teams/IndexedDB/https_teams.microsoft.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/09/10-09:30:38.193 3df8c Recovering log #51
+2021/09/10-09:30:38.214 3df8c Reusing old log /home/fonsi/.config/Microsoft/Microsoft Teams/IndexedDB/https_teams.microsoft.com_0.indexeddb.leveldb/000051.log 
+2021/09/10-09:30:41.755 3e09c Level-0 table #59: started
+2021/09/10-09:30:41.772 3e09c Level-0 table #59: 1287670 bytes OK
+2021/09/10-09:30:41.776 3e09c Delete type=0 #51
+2021/09/10-09:30:41.776 3e09c Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2021/09/10-09:30:41.776 3e09c Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x09\x02\x02\x01<\x001\x009\x00:\x00w\x00Z\x00t\x00f\x003\x006\x00Q\x00n\x00g\x002\x00d\x002\x00I\x00Z\x00g\x00p\x00E\x006\x00H\x009\x00F\x00S\x00v\x00v\x006\x00w\x00h\x000\x00M\x00F\x00R\x00o\x00x\x00r\x00S\x00i\x00M\x00v\x00g\x004\x000\x00d\x00Y\x001\x00@\x00t\x00h\x00r\x00e\x00a\x00d\x00.\x00t\x00a\x00c\x00v\x002' @ 139935 : 1
+2021/09/10-09:30:41.776 3e09c Compacting 1@1 + 4@2 files
+2021/09/10-09:30:41.834 3e09c Generated table #60@1: 16403 keys, 2191953 bytes
+2021/09/10-09:30:41.855 3e09c Generated table #61@1: 762 keys, 2135503 bytes
+2021/09/10-09:30:41.877 3e09c Generated table #62@1: 1001 keys, 2130718 bytes
+2021/09/10-09:30:41.906 3e09c Generated table #63@1: 13366 keys, 1957241 bytes
+2021/09/10-09:30:41.906 3e09c Compacted 1@1 + 4@2 files => 8415415 bytes
+2021/09/10-09:30:41.909 3e09c compacted to: files[ 0 0 4 0 0 0 0 ]
+2021/09/10-09:30:41.909 3e09c Delete type=2 #55
+2021/09/10-09:30:41.909 3e09c Delete type=2 #53
+2021/09/10-09:30:41.909 3e09c Delete type=2 #59
+2021/09/10-09:30:41.909 3e09c Delete type=2 #56
+2021/09/10-09:30:41.909 3e09c Delete type=2 #54
+2021/09/10-09:30:41.910 3e09c Manual compaction at level-1 from '\x00\x09\x02\x02\x01<\x001\x009\x00:\x00w\x00Z\x00t\x00f\x003\x006\x00Q\x00n\x00g\x002\x00d\x002\x00I\x00Z\x00g\x00p\x00E\x006\x00H\x009\x00F\x00S\x00v\x00v\x006\x00w\x00h\x000\x00M\x00F\x00R\x00o\x00x\x00r\x00S\x00i\x00M\x00v\x00g\x004\x000\x00d\x00Y\x001\x00@\x00t\x00h\x00r\x00e\x00a\x00d\x00.\x00t\x00a\x00c\x00v\x002' @ 139935 : 1 .. (end); will stop at (end)
