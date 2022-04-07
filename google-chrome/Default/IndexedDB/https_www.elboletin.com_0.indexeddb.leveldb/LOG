@@ -1,6 +1,0 @@
-2021/09/10-13:16:10.002 bbb4f Creating DB /home/fonsi/.config/google-chrome/Default/IndexedDB/https_www.elboletin.com_0.indexeddb.leveldb since it was missing.
-2021/09/10-13:16:10.012 bbb4f Reusing MANIFEST /home/fonsi/.config/google-chrome/Default/IndexedDB/https_www.elboletin.com_0.indexeddb.leveldb/MANIFEST-000001
-2021/09/10-13:17:02.676 bbb4f Level-0 table #5: started
-2021/09/10-13:17:02.678 bbb4f Level-0 table #5: 1751 bytes OK
-2021/09/10-13:17:02.681 bbb4f Delete type=0 #3
-2021/09/10-13:17:02.681 bbb4f Manual compaction at level-0 from (begin) .. (end); will stop at (end)

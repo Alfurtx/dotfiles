@@ -1,6 +1,0 @@
-2021/09/09-10:12:21.290 348b7 Creating DB /home/fonsi/.config/google-chrome/Default/IndexedDB/https_wchat.freshchat.com_0.indexeddb.leveldb since it was missing.
-2021/09/09-10:12:21.297 348b7 Reusing MANIFEST /home/fonsi/.config/google-chrome/Default/IndexedDB/https_wchat.freshchat.com_0.indexeddb.leveldb/MANIFEST-000001
-2021/09/09-10:14:19.960 348ba Level-0 table #5: started
-2021/09/09-10:14:19.962 348ba Level-0 table #5: 8615 bytes OK
-2021/09/09-10:14:19.965 348ba Delete type=0 #3
-2021/09/09-10:14:19.965 348ba Manual compaction at level-0 from (begin) .. (end); will stop at (end)

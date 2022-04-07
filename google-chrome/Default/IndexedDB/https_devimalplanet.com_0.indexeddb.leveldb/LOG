@@ -1,6 +1,0 @@
-2021/08/30-21:50:42.537 37d7b Creating DB /home/fonsi/.config/google-chrome/Default/IndexedDB/https_devimalplanet.com_0.indexeddb.leveldb since it was missing.
-2021/08/30-21:50:42.545 37d7b Reusing MANIFEST /home/fonsi/.config/google-chrome/Default/IndexedDB/https_devimalplanet.com_0.indexeddb.leveldb/MANIFEST-000001
-2021/08/30-21:51:14.666 37d7c Level-0 table #5: started
-2021/08/30-21:51:14.668 37d7c Level-0 table #5: 1702 bytes OK
-2021/08/30-21:51:14.671 37d7c Delete type=0 #3
-2021/08/30-21:51:14.671 37d7c Manual compaction at level-0 from (begin) .. (end); will stop at (end)
