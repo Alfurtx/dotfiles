@@ -1,3 +1,9 @@
 lastupdatecheck: 0
-recentrepos: []
+recentrepos:
+- /home/fonsi/.config
+- /home/fonsi/proyectos/yawm
+- /home/fonsi/proyectos/minecraft_opengl
+- /home/fonsi/.config/nvim
 startuppopupversion: 5
+customcommandshistory: []
+hidecommandlog: false

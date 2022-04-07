@@ -31,7 +31,7 @@ keys = [
     # LAYOUT BINDINGS #
     Key([mod], "plus", lazy.layout.grow()),
     Key([mod], "minus", lazy.layout.shrink()),
-    Key([mod], "n", lazy.layout.normalize()),
+    # Key([mod], "n", lazy.layout.normalize()),
 
     Key([mod], "period", lazy.next_screen()),
     Key([mod], "comma", lazy.prev_screen()),
@@ -60,8 +60,9 @@ keys = [
     # Split = all windows displayed
     # Unsplit = 1 window displayed, like Max layout, but still with
     # multiple stack panes
-    Key([mod, "shift"], "Return", lazy.spawn("rofi -modi run,drun -show drun -columns 1 -width 24 -lines 8 -padding 45 -hide-scrollbar -show-icons -drun-icon-theme 'Papirus'")),
-
+    # Key([mod, "shift"], "Return", lazy.spawn("rofi -show run -modi run -matching normal -location 1 -width 100 -l 1 -line-margin 0 -line-padding 1 -separator-style none -font \"mono 10\" -columns 9 -bw 0 -disable-history -hide-scrollbar -color-window \"#222222, #222222, #b1b4b3\" -color-normal \"#222222, #b1b4b3, #222222, #005577, #b1b4b3\" -color-active \"#222222, #b1b4b3, #222222, #007763, #b1b4b3\" -color-urgent \"#222222, #b1b4b3, #222222, #77003d, #b1b4b3\" -kb-row-select \"Tab\" -kb-row-tab \"\"") ),
+    Key([mod, "shift"], "Return", lazy.spawn("rofi -show run -modi run -matching normal -location 1 -width 100 -l 1 -line-margin 0 -line-padding 1 -separator-style none -font \"mono 10\" -columns 9 -bw 0 -disable-history -hide-scrollbar -kb-row-select \"Tab\" -kb-row-tab \"\"") ),
+    Key([mod], "n", lazy.spawn("neovide")),
     Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
 
     # Toggle between different layouts as defined below
@@ -226,7 +227,7 @@ def ini_widget():
     ]
     return wid_list
 
-screens = [ 
+screens = [
     Screen( top = bar.Bar( widgets = ini_widget(), size = 25, background = colors['bg'] ) ),
     Screen( top = bar.Bar( widgets = ini_widget(), size = 25, background = colors['bg'] ) ),
     Screen( top = bar.Bar( widgets = ini_widget(), size = 25, background = colors['bg'] ) ),

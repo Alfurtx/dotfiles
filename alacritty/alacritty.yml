@@ -7,11 +7,11 @@ window:
     x: 10
     y: 10
   decorations: none
+  opacity: 0.95
 scrolling:
   history: 10000
   multiplier: 3
 
-background_opacity: 0.95
 
 window.dynamic_title: true
 
@@ -26,7 +26,7 @@ font:
   italic:
     family: Hack Nerd Font
     style: Italic
-  size: 10.0
+  size: 11.0
   offset:
     x: 0
     y: 1
@@ -38,14 +38,11 @@ font:
     persistent_logging: false
 draw_bold_text_with_bright_colors: true
 
-# Colors (Doom One)
+# Colors
 colors:
-  # Default colors
   primary:
-    background: '0x282c34'
-    foreground: '0xbbc2cf'
-
-  # Normal colors
+    background: '0x161616'
+    foreground: '0xcdaa7d'
   normal:
     black:   '0x282c34'
     red:     '0xff6c6b'

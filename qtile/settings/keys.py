@@ -4,7 +4,7 @@ from libqtile.command import lazy
 mod = "mod4"
 terminal = "alacritty"
 
-keys = [ 
+keys = [
 
     # switch between windows
     Key( [mod], "j", lazy.layout.down() ),
@@ -35,5 +35,8 @@ keys = [
     Key( [mod], "Return", lazy.spawn("alacritty") ),
 
     # spawn rofi
-    Key( [mod, "shift"], "Return", lazy.spawn("rofi -modi run,drun -show drun -columns 1 -width 24 -lines 8 -padding 45 -hide-scrollbar -show-icons -drun-icon-theme 'Papirus'") ),
+    Key( [mod, "shift"], "Return", lazy.spawn("rofi -show run -modi run -location 1 -width 100 -l 1 -line-margin 0 -line-padding 1 -separator-style none -font \"mono 10\" -columns 9 -bw 0 -disable-history -hide-scrollbar -color-window \"#222222, #222222, #b1b4b3\" -color-normal \"#222222, #b1b4b3, #222222, #005577, #b1b4b3\" -color-active \"#222222, #b1b4b3, #222222, #007763, #b1b4b3\" -color-urgent \"#222222, #b1b4b3, #222222, #77003d, #b1b4b3\" -kb-row-select \"Tab\" -kb-row-tab \"\"") ),
+
+    # spawn neovide
+    Key( [mod], "n", lazy.spawn("neovide") ),
 ]

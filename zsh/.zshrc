@@ -64,17 +64,17 @@ zstyle ':completion:*' group-name ''
 # === [ NVM SCRIPTS ] === #
 
 # This loads nvm
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 #
 # This loads nvm bash_completion
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 # === [ END ] === #
 
 
 # === [ IMPROVED COMMANDS ] === #
 
-alias l='exa -l --no-filesize --no-user --git --git-ignore --no-time --group-directories-first -T --level=2 --sort=Name --sort=Extension -F'
+alias l='exa -l --no-filesize --no-user --git --git-ignore --no-time --group-directories-first -T --level=1 --sort=Name --sort=Extension -F'
 alias la='exa -l --git --git-ignore --no-time -a --group-directories-first -T --level=2 --sort=Name --sort=Extension -F'
 alias lsa='exa -l --git --git-ignore --no-time -a --group-directories-first --sort=Name --sort=Extension -F'
 
@@ -84,7 +84,7 @@ eval "$(zoxide init zsh)"
 alias yt='youtube-dl -x -f bestaudio --add-metadata --audio-quality 0 --audio-format mp3 --embed-thumbnail --external-downloader aria2c --external-downloader-args "-c -j 3 -x 3 -s3 -k 1M"'
 alias ytv='youtube-dl --merge-output-format mp4 -f "bestvideo+bestaudio[ext=m4a]/best" --embed-thumbnail --add-metadata'
 
-# music stuff (mpd and ncmpcpp) 
+# music stuff (mpd and ncmpcpp)
 alias kek=" killall mpd ncmpcpp ncmpcpp_cover_art.sh"
 alias mpdd=" mpd && ~/.config/ncmpcpp/ncmpcpp-ueberzug/ncmpcpp-ueberzug"
 
@@ -103,7 +103,12 @@ alias ll='ls -l'
 
 # === [ SSH AGENT ] === #
 
-eval $(keychain --eval --quiet id_rsa --noask --absolute --dir "$XDG_RUNTIME_DIR/keychain")
+if ! pgrep -u "$USER" ssh-agent > /dev/null; then
+    ssh-agent > ~/.ssh/.ssh-agent-thing
+fi
+if [[ "$SSH_AGENT_PID" == "" ]]; then
+    eval "$(<~/.ssh/.ssh-agent-thing)"
+fi
 
 # === [ END ] === #
 

@@ -2,3 +2,17 @@ doom-nvim/*
 doom-nvim
 ncmpcpp/ncmpcpp-ueberzug/*
 cargo/*
+Code/
+Microsoft/
+Postman/
+coc/*
+configstore/
+google-chrome/
+teams/
+gtk*
+youtube-dl/
+systemd/
+
+coc
+google-chrome
+screenlayout/screenlayout.sh
