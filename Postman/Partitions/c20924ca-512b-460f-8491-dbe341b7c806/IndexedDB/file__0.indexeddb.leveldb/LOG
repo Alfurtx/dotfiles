@@ -1,4 +1,0 @@
-2022/04/20-21:15:19.710 14b371 Reusing MANIFEST /home/fonsi/.config/Postman/Partitions/c20924ca-512b-460f-8491-dbe341b7c806/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
-2022/04/20-21:15:19.710 14b371 Recovering log #62
-2022/04/20-21:15:19.711 14b371 Reusing old log /home/fonsi/.config/Postman/Partitions/c20924ca-512b-460f-8491-dbe341b7c806/IndexedDB/file__0.indexeddb.leveldb/000062.log 
-2022/04/20-21:15:19.711 14b371 Delete type=2 #60
