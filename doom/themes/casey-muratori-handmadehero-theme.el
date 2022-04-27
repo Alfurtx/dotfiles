@@ -3,10 +3,9 @@
 
 (custom-theme-set-faces
  'casey-muratori-handmadehero
- '(default ((t (:inherit nil :extend nil :stipple nil :background "#161616" :foreground "burlywood3" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 135 :width normal :foundry "SRC" :family "Hack Nerd Font"))))
  '(cursor ((t (:background "#40ff40"))))
- '(fixed-pitch ((t (:family "Hack Nerd Font" :foundry "SRC" :height 135))))
- '(variable-pitch ((t (:family "Hack Nerd Font" :foundry "SRC" :height 135))))
+ '(fixed-pitch ((t (:height 130 :foundry "SRC" :family "Liberation Mono"))))
+ '(variable-pitch ((t (:height 130 :foundry "SRC" :family "Liberation Mono"))))
  '(escape-glyph ((t (:foreground "olive drab"))))
  '(homoglyph ((((background dark)) (:foreground "cyan")) (((type pc)) (:foreground "magenta")) (t (:foreground "brown"))))
  '(minibuffer-prompt ((t (:foreground "burlywood3"))))
@@ -27,7 +26,7 @@
  '(font-lock-regexp-grouping-backslash ((t (:inherit (bold default)))))
  '(font-lock-regexp-grouping-construct ((t (:inherit (bold default)))))
  '(font-lock-string-face ((t (:foreground "olive drab"))))
- '(font-lock-type-face ((t (:foreground "burlywood3"))))
+ '(font-lock-type-face ((t (:foreground "DarkGoldenrod3"))))
  '(font-lock-variable-name-face ((t (:foreground "burlywood3"))))
  '(font-lock-warning-face ((t (:inherit (warning)))))
  '(button ((t (:inherit (link)))))
@@ -48,6 +47,7 @@
  '(next-error ((t (:inherit (region)))))
  '(query-replace ((t (:inherit (isearch)))))
  '(company-tooltip ((t (:inherit default))))
- '(company-tooltip-selection ((t (:inherit highlight :weight bold)))))
+ '(company-tooltip-selection ((t (:inherit highlight :weight bold))))
+ '(default ((t (:inherit nil :extend nil :stipple nil :background "#161616" :foreground "burlywood3" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 130 :width normal :foundry "SRC" :family "Liberation Mono" :spacing 100)))))
 
 (provide-theme 'casey-muratori-handmadehero)

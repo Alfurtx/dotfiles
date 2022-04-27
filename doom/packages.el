@@ -50,5 +50,5 @@
 ;(unpin! t)
 
 
-(package! golden-ratio)
-(package! dashboard)
+;; (package! golden-ratio)
+;; (package! dashboard)

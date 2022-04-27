@@ -1,0 +1,9 @@
+alias l='exa -l --no-filesize --no-user --git --git-ignore --no-time --group-directories-first -T --level=1 --sort=Name --sort=Extension -F'
+alias la='exa -l --git --git-ignore --no-time -a --group-directories-first -T --level=2 --sort=Name --sort=Extension -F'
+alias lsa='exa -l --git --git-ignore --no-time -a --group-directories-first --sort=Name --sort=Extension -F'
+alias yt='youtube-dl -x -f bestaudio --add-metadata --audio-quality 0 --audio-format mp3 --embed-thumbnail --external-downloader aria2c --external-downloader-args "-c -j 3 -x 3 -s3 -k 1M"'
+alias ytv='youtube-dl --merge-output-format mp4 -f "bestvideo+bestaudio[ext=m4a]/best" --embed-thumbnail --add-metadata'
+alias wget='wget --hsts-file=$XDG_CACHE_HOME/wget/.wget-hsts'
+alias ll='ls -l'
+
+eval "$(zoxide init zsh)"

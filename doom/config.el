@@ -3,12 +3,12 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; FONTS
-(setq doom-font (font-spec :family "Hack Nerd Font" :size 15)
-      doom-variable-pitch-font (font-spec :family "Hack Nerd Font" :size 15)
-      doom-big-font (font-spec :family "Hack Nerd Font" :size 24))
+(setq doom-theme 'casey-muratori-handmadehero)
+(setq doom-font (font-spec :family "Liberation Mono" :spacing 100 :size 16.5)
+      doom-variable-pitch-font (font-spec :family "Liberation Mono" :spacing 100 :size 16.5)
+      doom-big-font (font-spec :family "Liberation Mono" :size 24))
 
 ;; THEME
-(setq doom-theme 'casey-muratori-handmadehero)
 (global-hl-line-mode 1)
 (custom-set-faces! '(hl-line :background "midnight blue"))
 (setq fixme-modes '(c++-mode c-mode emacs-lisp-mode))
@@ -30,9 +30,10 @@
 (setq display-line-numbers-type nil)
 (setq confirm-kill-emacs nil)
 (setq user-full-name "Alfonso Amorós" user-mail-address "alfonso.alfurtx@gmail.com")
-(setq-default line-spacing 0.25)
+;(setq-default line-spacing 0.25)
 (global-subword-mode 1)
 (setq doom-fallback-buffer-name "*dashboard*")
+(setq scroll-margin 2)
 
 ;; KEYBINDINGS
 (define-key evil-insert-state-map (kbd "C-c") 'evil-normal-state)
@@ -54,15 +55,46 @@
 (setq dap-auto-configure-mode t)
 (require 'dap-cpptools)
 
+(map! :map dap-mode-map
+      :leader
+      :prefix ("d" . "debugger")
+      ;; basics
+      :desc "dap next"          "n" #'dap-next
+      :desc "dap step in"       "i" #'dap-step-in
+      :desc "dap step out"      "o" #'dap-step-out
+      :desc "dap continue"      "c" #'dap-continue
+      :desc "dap hydra"         "h" #'dap-hydra
+      :desc "dap debug restart" "r" #'dap-debug-restart
+      :desc "dap debug"         "s" #'dap-debug
+
+      ;; debug
+      :prefix ("dd" . "Debug")
+      :desc "dap debug recent"  "r" #'dap-debug-recent
+      :desc "dap debug last"    "l" #'dap-debug-last
+
+      ;; eval
+      :prefix ("de" . "Eval")
+      :desc "eval"                "e" #'dap-eval
+      :desc "eval region"         "r" #'dap-eval-region
+      :desc "eval thing at point" "s" #'dap-eval-thing-at-point
+      :desc "add expression"      "a" #'dap-ui-expressions-add
+      :desc "remove expression"   "d" #'dap-ui-expressions-remove
+
+      :prefix ("db" . "Breakpoint")
+      :desc "dap breakpoint toggle"      "b" #'dap-breakpoint-toggle
+      :desc "dap breakpoint condition"   "c" #'dap-breakpoint-condition
+      :desc "dap breakpoint hit count"   "h" #'dap-breakpoint-hit-condition
+      :desc "dap breakpoint log message" "l" #'dap-breakpoint-log-message)
+
 ;; GOLDEN RATIO CONFIG
-(use-package! golden-ratio
-  :after-call pre-command-hook
-  :config
-  (golden-ratio-mode +1)
-  ;; Using this hook for resizing windows is less precise than
-  ;; `doom-switch-window-hook'.
-  (remove-hook 'window-configuration-change-hook #'golden-ratio)
-  (add-hook 'doom-switch-window-hook #'golden-ratio))
+;; (use-package! golden-ratio
+;;   :after-call pre-command-hook
+;;   :config
+;;   (golden-ratio-mode +1)
+;;   ;; Using this hook for resizing windows is less precise than
+;;   ;; `doom-switch-window-hook'.
+;;   (remove-hook 'window-configuration-change-hook #'golden-ratio)
+;;   (add-hook 'doom-switch-window-hook #'golden-ratio))
 
 ;; POPUP RULES
 (set-popup-rule! "^\\*compilation\*" :side 'right :select t)
@@ -75,34 +107,9 @@
 (after! format
   (set-formatter! 'clang-format
     '("clang-format"
-      "-style={ColumnLimit: 120, AlignEscapedNewlines: Left, BinPackArguments: false, BinPackParameters: false, AllowAllArgumentsOnNextLine: false, AllowShortFunctionsOnASingleLine: All, AllowShortEnumsOnASingleLine: true, AllowShortCaseLabelsOnASingleLine: false, SpaceAfterCStyleCast: true, PointerAlignment: Left, ReferenceAlignment: Right, BreakBeforeBraces: Allman, IndentWidth: 8, AlignAfterOpenBracket: Align, AlignArrayOfStructures: Right, AlignConsecutiveAssignments: Consecutive, AlignConsecutiveDeclarations: Consecutive, AlignConsecutiveBitFields: Consecutive, AllowShortBlocksOnASingleLine: Always, AlwaysBreakAfterReturnType: AllDefinitions}"
+      "-style=file"
       ("-assume-filename=%S" (or buffer-file-name mode-result "")))
     ))
 
 ;; RANGER SETUP
 (setq ranger-show-hidden t)
-
-;; DASHBOARD CONFIG
-(use-package dashboard
-  :init      ;; tweak dashboard config before loading it
-  (setq dashboard-set-heading-icons t)
-  (setq dashboard-set-file-icons t)
-  (setq dashboard-banner-logo-title "\nKEYBINDINGS:\
-\nFind file               (SPC .)     \
-Open buffer list    (SPC b i)\
-\nFind recent files       (SPC f r)   \
-Open the eshell     (SPC e s)\
-\nOpen dired file manager (SPC d d)   \
-List of keybindings (SPC h b b)")
-  ;;(setq dashboard-startup-banner 'logo) ;; use standard emacs logo as banner
-  (setq dashboard-startup-banner "~/.config/doom/doom-emacs-dash.png")  ;; use custom image as banner
-  (setq dashboard-center-content nil) ;; set to 't' for centered content
-  (setq dashboard-items '((recents . 5)
-                          (agenda . 5 )
-                          (bookmarks . 5)
-                          (projects . 5)
-                          (registers . 5)))
-  :config
-  (dashboard-setup-startup-hook)
-  (dashboard-modify-heading-icons '((recents . "file-text")
-                                    (bookmarks . "book"))))

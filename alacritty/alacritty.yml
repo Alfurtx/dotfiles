@@ -44,7 +44,7 @@ colors:
     background: '0x161616'
     foreground: '0xcdaa7d'
   normal:
-    black:   '0x282c34'
+    black:   '0x161616'
     red:     '0xff6c6b'
     green:   '0x98be65'
     yellow:  '0xecbe7b'

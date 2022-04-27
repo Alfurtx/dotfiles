@@ -26,6 +26,7 @@ colors = {
 mod = "mod4"
 altgr = "mod5"
 terminal = "alacritty"
+alt = "mod1"
 
 keys = [
     # LAYOUT BINDINGS #
@@ -49,8 +50,6 @@ keys = [
         desc="Move window up in current stack "),
 
     # Switch window focus to other pane(s) of stack
-    Key([mod], "space", lazy.layout.next(),
-        desc="Switch window focus to other pane(s) of stack"),
 
     # Swap panes of split stack
     Key([mod, "shift"], "space", lazy.layout.rotate(),
@@ -62,7 +61,8 @@ keys = [
     # multiple stack panes
     # Key([mod, "shift"], "Return", lazy.spawn("rofi -show run -modi run -matching normal -location 1 -width 100 -l 1 -line-margin 0 -line-padding 1 -separator-style none -font \"mono 10\" -columns 9 -bw 0 -disable-history -hide-scrollbar -color-window \"#222222, #222222, #b1b4b3\" -color-normal \"#222222, #b1b4b3, #222222, #005577, #b1b4b3\" -color-active \"#222222, #b1b4b3, #222222, #007763, #b1b4b3\" -color-urgent \"#222222, #b1b4b3, #222222, #77003d, #b1b4b3\" -kb-row-select \"Tab\" -kb-row-tab \"\"") ),
     Key([mod, "shift"], "Return", lazy.spawn("rofi -show run -modi run -matching normal -location 1 -width 100 -l 1 -line-margin 0 -line-padding 1 -separator-style none -font \"mono 10\" -columns 9 -bw 0 -disable-history -hide-scrollbar -kb-row-select \"Tab\" -kb-row-tab \"\"") ),
-    Key([mod], "n", lazy.spawn("neovide")),
+    Key([alt], "space", lazy.spawn("dmenu_run")),
+    Key([mod], "n", lazy.spawn("emacsclient -c -a 'emacs'")),
     Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
 
     # Toggle between different layouts as defined below

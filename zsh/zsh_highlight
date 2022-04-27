@@ -1,0 +1,9 @@
+typeset -A ZSH_HIGHLIGHT_STYLES
+# ZSH_HIGHLIGHT_STYLES[command]='fg=#cd950c,bold'
+# ZSH_HIGHLIGHT_STYLES[alias]='fg=#cd950c,bold'
+# ZSH_HIGHLIGHT_STYLES[builtin]='fg=#cd950c,bold'
+# ZSH_HIGHLIGHT_STYLES[global-alias]='fg=#cd950c,bold'
+ZSH_HIGHLIGHT_STYLES[command]='fg=#cd950c'
+ZSH_HIGHLIGHT_STYLES[alias]='fg=#cd950c'
+ZSH_HIGHLIGHT_STYLES[builtin]='fg=#cd950c'
+ZSH_HIGHLIGHT_STYLES[global-alias]='fg=#cd950c'

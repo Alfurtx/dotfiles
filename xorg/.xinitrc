@@ -41,3 +41,4 @@ fi
 # exec bspwm
 
 exec qtile start
+# exec /home/fonsi/proyectos/yawm/yawm

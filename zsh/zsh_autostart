@@ -1,0 +1,2 @@
+[[ ! -f $XDG_CONFIG_HOME/powerlevel10k/p10k.zsh ]] || source $XDG_CONFIG_HOME/powerlevel10k/p10k.zsh
+[[ $(fgconsole 2>/dev/null) == 1 ]] && startx "$XDG_CONFIG_HOME/xorg/.xinitrc"

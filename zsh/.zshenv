@@ -36,5 +36,6 @@ export GNUPGHOME="${XDG_DATA_HOME:-$HOME/.local/share}/gnupg"
 # for custom commands (a.k.a 'zsh_history_fix')
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$EMACSDIR/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
 
 # === [ END ] === #

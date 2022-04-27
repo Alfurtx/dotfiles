@@ -16,4 +16,4 @@ feh --randomize --no-fehbg --bg-fill ~/pictures/wallpapers/* &
 solaar --window=hide &
 
 # doom emacs (daemon)
-# /usr/bin/emacs --daemon &
+# /usr/bin/emacs --daemon 2> /dev/null

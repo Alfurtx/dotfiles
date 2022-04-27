@@ -1,5 +1,5 @@
 {
-  "4069:47EC93B3": {
+  "4069:6132D734": {
     "_absent": [
       "hi-res-scroll",
       "lowres-smooth-scroll",
@@ -20,7 +20,15 @@
       "m-key-leds",
       "mr-key-led",
       "multiplatform",
-      "gesture2-params"
+      "gesture2-params",
+      "dpi",
+      "dpi-sliding",
+      "mouse-gestures",
+      "reprogrammable-keys",
+      "divert-keys",
+      "change-host",
+      "gesture2-gestures",
+      "gesture2-divert"
     ],
     "_modelId": "B01940690000",
     "_name": "Wireless Mouse MX Master 2S",

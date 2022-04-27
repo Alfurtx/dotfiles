@@ -1,14 +1,4 @@
-2021/07/28-13:03:50.087 152a Reusing MANIFEST /home/fonsi/.config/Postman/Partitions/c20924ca-512b-460f-8491-dbe341b7c806/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
-2021/07/28-13:03:50.087 152a Recovering log #58
-2021/07/28-13:03:50.094 152a Reusing old log /home/fonsi/.config/Postman/Partitions/c20924ca-512b-460f-8491-dbe341b7c806/IndexedDB/file__0.indexeddb.leveldb/000058.log 
-2021/07/28-13:03:50.095 152a Delete type=2 #56
-2021/07/28-13:04:03.478 152b Level-0 table #63: started
-2021/07/28-13:04:03.482 152b Level-0 table #63: 10608 bytes OK
-2021/07/28-13:04:03.485 152b Delete type=0 #58
-2021/07/28-13:04:03.485 152b Manual compaction at level-0 from '\x00\x12\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x13\x00\x00\x00' @ 0 : 0; will stop at '\x00\x12\x00\x00\x05' @ 16583 : 1
-2021/07/28-13:04:03.485 152b Compacting 1@0 + 1@1 files
-2021/07/28-13:04:03.493 152b Generated table #64@0: 5716 keys, 98037 bytes
-2021/07/28-13:04:03.493 152b Compacted 1@0 + 1@1 files => 98037 bytes
-2021/07/28-13:04:03.496 152b compacted to: files[ 0 1 1 0 0 0 0 ]
-2021/07/28-13:04:03.496 152b Delete type=2 #63
-2021/07/28-13:04:03.496 152b Manual compaction at level-0 from '\x00\x12\x00\x00\x05' @ 16583 : 1 .. '\x00\x13\x00\x00\x00' @ 0 : 0; will stop at (end)
+2022/04/20-21:15:19.710 14b371 Reusing MANIFEST /home/fonsi/.config/Postman/Partitions/c20924ca-512b-460f-8491-dbe341b7c806/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
+2022/04/20-21:15:19.710 14b371 Recovering log #62
+2022/04/20-21:15:19.711 14b371 Reusing old log /home/fonsi/.config/Postman/Partitions/c20924ca-512b-460f-8491-dbe341b7c806/IndexedDB/file__0.indexeddb.leveldb/000062.log 
+2022/04/20-21:15:19.711 14b371 Delete type=2 #60
